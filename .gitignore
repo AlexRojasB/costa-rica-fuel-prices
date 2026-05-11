@@ -1,0 +1,50 @@
+## .NET
+bin/
+obj/
+*.user
+.vs/
+*.suo
+*.swp
+*.sln.docstates
+*.[Rr]esharper*
+_ReSharper*/
+*.DotSettings.user
+.idea/
+
+## Build
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+## Claude Code internals
+.claude/settings.local.json
+.claude/worktrees/
+
+## Environment / Secrets
+.env
+.env.local
+.env.production
+.secrets
+appsettings.Production.secrets.json
+secrets.json
+
+## Migrations backup
+*_backup.cs
+
+## OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## Docker
+.dockerignore
+
+## Logs
+*.log
+logs/
+
+## Local SQLite database
+*.db
+*.db-shm
+*.db-wal

@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch API (Local)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/src/CRFuelScraper.API/bin/Debug/net8.0/CRFuelScraper.API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/CRFuelScraper.API",
+      "stopAtEntry": false,
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Local",
+        "ConnectionStrings__DefaultConnection": "Data Source=${workspaceFolder}/costa_rica_fuel_local.db"
+      },
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "Now listening on: (https?://\\S+)"
+      }
+    }
+  ]
+}
